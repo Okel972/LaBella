@@ -1,18 +1,4 @@
-:root{
---main-color:c00a27#;
---red:#e74c3c;
---orange:#f39c12;
---light-color:#666;
---light-bg:#eee;
---white:#fff;
---black:#2c3e50;
---border:.1rem solid rgba(0,0,0,.3);
---box-shodow:0 .5rem 1rem rgba(0,0,0,.1);
-}
 
-body {
-    box-sizing: border-box;
-}
 
 .topbar {
     display: flex;

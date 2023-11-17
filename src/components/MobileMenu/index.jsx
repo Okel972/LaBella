@@ -6,7 +6,7 @@ export const MobileMenu = props => {
   const location = useLocation();
   return (
     <div className="menu-mobile">
-      <nav className="topbar-nav-mobile">
+      <div className="topbar-nav-mobile">
         {props.routes.map((route, index) => {
           return (
             <Link
@@ -21,7 +21,7 @@ export const MobileMenu = props => {
             </Link>
           );
         })}
-      </nav>
+      </div>
     </div>
   );
 };
