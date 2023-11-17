@@ -1,0 +1,26 @@
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.card-menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 2rem 4rem;
+}
+
+.title-menu-list {
+    color: #C00A27;
+    font-family: Helvetica Neue;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90px; /* 140.625% */
+    letter-spacing: -2.5px;
+    text-transform: capitalize;
+    margin-top: 3rem;
+}

@@ -1,7 +1,11 @@
+import React from 'react';
+import { ContactForm } from '../../components/ContactForm';
+import './Contact.css';
+
 export const Contact = () => {
-    return (
-      <div>
-        <h1>Contact</h1>
-      </div>
-    );
-  };
+  return (
+    <div className="contact-page">
+      <ContactForm />
+    </div>
+  );
+};

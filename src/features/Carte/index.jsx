@@ -1,7 +1,9 @@
+import { MenuList } from '../../components/MenuList';
+
 export const Carte = () => {
-    return (
-      <div>
-        <h1>Carte</h1>
-      </div>
-    );
-  };
+  return (
+    <div>
+      <MenuList title="Nos Articles" />
+    </div>
+  );
+};

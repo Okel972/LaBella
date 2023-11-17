@@ -1,0 +1,30 @@
+.description-fildelite {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border-radius: 200px;
+    background: #8CA93E;
+    width: 854px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green {
+    background: #8CA93E;
+}
+
+.red {
+    background: #C00A27;
+}
+
+.description-fildelite h2 {
+    color: #FFF;
+    font-family: Avenir Next;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+}
