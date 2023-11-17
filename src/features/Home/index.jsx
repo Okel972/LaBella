@@ -1,5 +1,5 @@
-import { Carousel } from './components/Carousel';
-import { Promo } from './components/Promo';
+import { Promo } from '../../components/Promo';
+import { Carousel } from '../../components/Carousel';
 
 export const Home = () => {
   return (

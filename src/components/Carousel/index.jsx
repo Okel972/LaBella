@@ -1,32 +1,54 @@
 import './Carousel.css';
+import { useState } from 'react';
+import ImageGallery from 'react-image-gallery';
+
+const images = [
+  {
+    original: 'img/Slide_1.jpg',
+    thumbnail: 'img/Slide_1.jpg',
+    title: 'la veggie',
+    descriptionImage: 'Une nouvelle offre végétarienne.',
+  },
+  {
+    original: 'img/Slide_2.jpg',
+    thumbnail: 'img/Slide_2.jpg',
+  },
+  {
+    original: 'img/Slide_3.jpg',
+    thumbnail: 'img/Slide_3.jpg',
+  },
+  {
+    original: 'img/Slide_4.jpg',
+    thumbnail: 'img/Slide_4.jpg',
+  },
+];
 
 export const Carousel = () => {
-    return (
+  // Use state to keep track of the active index
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Event handler for updating the active index
+  const handleSlide = index => {
+    setCurrentIndex(index);
+  };
+
+  return (
+    <div>
+      <ImageGallery
+        className="carousel"
+        items={images}
+        showPlayButton={false}
+        showFullscreenButton={false}
+        showThumbnails={false}
+        autoPlay={false}
+        onSlide={index => handleSlide(index)}
+      />
+      {currentIndex === 0 && images.length > 0 && (
         <div>
-            <section class="slider">
-
-                <article class="firstSlideContainer">
-
-                    <img src="img/Slide_1.jpg" alt="#" class="imageForFirstSlide"/>
-
-                    <div class="TextFirstSlideContainer">
-                        <span class="textForFirstSlide1">la veggie</span>
-                        <span class="textForFirstSlide2">Une nouvelle offre végétarienne. </span>
-                    </div>
-
-                </article>
-
-                <img src="img/Slide_2.jpg" alt="#"/>
-                <img src="img/Slide_3.jpg" alt="#"/>
-                <img src="img/Slide_4.jpg" alt="#"/>
-
-            </section>
-
-            <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-            <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-            <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-            <script type="text/javascript" src="script/script.js"></script>
+          <span class="title">{images[0].title}</span>
+          <span class="description">{images[0].descriptionImage}</span>
         </div>
-    );
-}
+      )}
+    </div>
+  );
+};
