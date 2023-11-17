@@ -36,7 +36,12 @@ export const Navbar = () => {
             ))}
           </nav>
 
-          <button onClick={toggleMenu} type="button" aria-label="toggle curtain navigation">
+          <button
+            onClick={toggleMenu}
+            type="button"
+            className="toggle"
+            aria-label="toggle curtain navigation"
+          >
             <span className="line l1"></span>
             <span className="line l2"></span>
             <span className="line l3"></span>

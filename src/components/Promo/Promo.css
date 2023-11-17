@@ -64,9 +64,7 @@ html {
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 507px;
     background-color: #00A149;
-    z-index: 0;
 }
 
 .promo-left-title {
@@ -154,9 +152,7 @@ html {
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 507px;
     background-color: #C00A27;
-    z-index: 0;
 }
 
 .promo-right-title {
@@ -241,4 +237,27 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
+}
+
+@media screen and (max-width: 1020px) {
+    .promotions {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .promo_L {
+        width: 100%;
+    }
+    .promo_R {
+        width: 100%;
+    }
+
+    .promo-right-order {
+        margin-bottom: 2rem;
+    }
+    .promo-left-order {
+        margin-bottom: 2rem;
+    }
 }

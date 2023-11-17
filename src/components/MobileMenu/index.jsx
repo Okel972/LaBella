@@ -6,8 +6,7 @@ export const MobileMenu = props => {
   const location = useLocation();
   return (
     <div className="menu-mobile">
-      <h1>MobileMenu</h1>
-      <nav className="topbar-nav">
+      <nav className="topbar-nav-mobile">
         {props.routes.map((route, index) => {
           return (
             <Link className={location.pathname} key={index} to={`/${route.toLowerCase()}`}>

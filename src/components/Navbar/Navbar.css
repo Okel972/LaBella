@@ -138,10 +138,14 @@ margin-right: 63px;
     background: transparent;
 }
 
+.toggle {
+    margin: 2rem;
+}
+
 .line {
     position: absolute;
     display: block;
-    width: 100%;
+    width: 2rem;
     height: 2px;
     background-color: #f1f1f1;
     transition: transform 0.3s ease-out, opacity 0.1s ease-out;
@@ -188,4 +192,5 @@ margin-right: 63px;
     display: flex;
     transform: translate(0);
 }
+
 }
