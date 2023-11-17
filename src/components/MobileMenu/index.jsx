@@ -9,7 +9,14 @@ export const MobileMenu = props => {
       <nav className="topbar-nav-mobile">
         {props.routes.map((route, index) => {
           return (
-            <Link className={location.pathname} key={index} to={`/${route.toLowerCase()}`}>
+            <Link
+              onClick={() => {
+                props.setIsMenuOpen(!props.isMenuOpen);
+              }}
+              className={location.pathname}
+              key={index}
+              to={`/${route.toLowerCase()}`}
+            >
               {route}
             </Link>
           );

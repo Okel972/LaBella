@@ -50,7 +50,9 @@ export const Navbar = () => {
           <section className="home"></section>
         </div>
 
-        {isMenuOpen && <MobileMenu routes={routes} />}
+        {isMenuOpen && (
+          <MobileMenu routes={routes} setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
+        )}
 
         <div className="topbar-last-section">
           <div className="container-numero">
