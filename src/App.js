@@ -1,14 +1,13 @@
 import './App.css';
-import { MainRoutes } from './ MainRoutes';
-import { Navbar } from './components/Navbar';
-import { Footer } from './components/Footer';
+import { AppRoutes } from './routes';
+import { AppProvider } from './provider/app';
 
 function App() {
   return (
     <main className="App">
-      <Navbar />
-      <MainRoutes />
-      <Footer />
+      <AppProvider>
+        <AppRoutes />
+      </AppProvider>
     </main>
   );
 }

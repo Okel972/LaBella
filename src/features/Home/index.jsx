@@ -5,14 +5,17 @@ import { FidelityCard } from '../../components/FildelityCard';
 import './Home.css';
 import { ContactForm } from '../../components/ContactForm';
 import { MenuList } from '../../components/MenuList';
+import { useGetAllProducts } from '../api/getAllProducts';
 
 export const Home = () => {
+  const products = useGetAllProducts();
+
   return (
     <div>
       <Carousel />
       <Promo />
       <div className="section-card">
-        <MenuList title="Nos Pizzas" />
+        <MenuList title="Nos Pizzas" products={products} />
         <FidelityCard />
         <Location />
         <ContactForm />
