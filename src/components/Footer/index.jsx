@@ -52,7 +52,7 @@ export const Footer = () => {
           </a>
 
           <button class="btnLogin-popup">
-            <a href="login.php">Login</a>
+            <a href="connect">Login</a>
           </button>
         </article>
 

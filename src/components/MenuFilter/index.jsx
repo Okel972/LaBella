@@ -2,35 +2,35 @@ import './MenuFilter.css';
 
 export const MenuFilter = () => {
     return (
-        <div class="menu-filter">
+        <div className="menu-filter">
 
             <a 
-            href="#" onclick="" class="text-icon">
-            <img src="img/pizza.svg" alt="" class="icon-text"/>Pizza</a>
+            href="#" onclick="" className="text-icon">
+            <img src="img/pizza.svg" alt="" className="icon-text"/>Pizza</a>
 
             <a 
-            href="#" onclick="" class="text-icon">
-            <img src="img/burger.svg" alt="" class="icon-text"/>Burgers</a>
+            href="#" onclick="" className="text-icon">
+            <img src="img/burger.svg" alt="" className="icon-text"/>Burgers</a>
 
             <a 
-            href="#" onclick="" class="text-icon">
-            <img src="img/tacos.svg" alt="" class="icon-text"/>Tacos</a>
+            href="#" onclick="" className="text-icon">
+            <img src="img/tacos.svg" alt="" className="icon-text"/>Tacos</a>
 
             <a 
-            href="#" onclick="" class="text-icon">
-            <img src="img/wrap.svg" alt="" class="icon-text"/>Wraps</a>
+            href="#" onclick="" className="text-icon">
+            <img src="img/wrap.svg" alt="" className="icon-text"/>Wraps</a>
 
             <a 
-            href="#" onclick="" class="text-icon">
-            <img src="img/fries.svg" alt="" class="icon-text"/>Fries</a>
+            href="#" onclick="" className="text-icon">
+            <img src="img/fries.svg" alt="" className="icon-text"/>Fries</a>
 
             <a 
-            href="#" onclick="" class="text-icon">
-            <img src="img/salads.svg" alt="" class="icon-text"/>Salads</a>
+            href="#" onclick="" className="text-icon">
+            <img src="img/salads.svg" alt="" className="icon-text"/>Salads</a>
 
             <a 
-            href="#" onclick="" class="text-icon">
-            <img src="img/drinks.svg" alt="" class="icon-text"/>Drinks</a>
+            href="#" onclick="" className="text-icon">
+            <img src="img/drinks.svg" alt="" className="icon-text"/>Drinks</a>
 
         </div>
     );

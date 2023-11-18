@@ -2,11 +2,11 @@ import './SearchBar.css';
 
 export const SearchBar = () => {
     return (
-        <div class="search-bar-container">
+        <div className="search-bar-container">
 
-            <div class="search-bar">
+            <div className="search-bar">
                 <hr/>
-                <input type="search" placeholder="Search" class="search-bar-input"/>
+                <input type="search" placeholder="Search" className="search-bar-input"/>
             </div>     
         
         </div>
