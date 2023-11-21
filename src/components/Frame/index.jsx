@@ -3,7 +3,11 @@ import './Frame.css';
 
 export const Frame = props => {
   return (
-    <div className={`description-fildelite ${props.backgroundColor === 'green' ? 'green' : 'red'}`}>
+    <div
+      className={`description-fildelite ${props.bottom ? 'bottom' : 'center'} ${
+        props.backgroundColor
+      }`}
+    >
       <h2>{props.children}</h2>
     </div>
   );

@@ -1,35 +1,19 @@
-.title {
+.title-carousel {
     position: absolute;
-    font-size: clamp(16px, 15vw, 128px);
+    font-size: 8rem;
+    white-space: nowrap;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: bold;
-    text-transform: uppercase;
-    white-space: nowrap;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    padding: 10px;
-
 }
 
-.description {
-    position: absolute;
-    font-size: clamp(5px, 4.7vw, 48px);
-    font-family: 'Geologica', sans-serif;
-    text-transform: uppercase;
-    white-space: nowrap;
-    top: 68%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 174, 0, 1);
-    border-radius: 2rem;
-    color: white;
-    padding: 0.625rem;
-}
 
 .carousel {
     position: relative;
+    height: max-content;
 }
 
 .image-gallery-image {
