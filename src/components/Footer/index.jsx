@@ -50,10 +50,6 @@ export const Footer = () => {
           <a href="liensUtiles/copyright.html" target="_blank" className="first-lign">
             Copyright
           </a>
-
-          <button className="btnLogin-popup">
-            <a href="connect">Login</a>
-          </button>
         </article>
 
         <article className="deuxieme-colonne">

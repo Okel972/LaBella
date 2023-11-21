@@ -29,8 +29,9 @@ export const Carousel = () => {
       showFullscreenButton={false}
       showThumbnails={false}
       autoPlay={false}
-      showNav={false}
+      showNav={true}
       showBullets={true}
+      showTitle={true}
     />
   );
 };

@@ -29,14 +29,19 @@
 }
 
 .carousel {
-   
     position: relative;
 }
 
 .image-gallery-image {
-    height: 100vh;
-    width: 100%;
     object-fit: cover !important;
     object-position: center;
     max-height: max-content !important;
+}
+
+@media screen and (max-width: 940px) {
+
+    .image-gallery-image {
+        object-fit: scale-down !important;
+        object-position: top;
+    }
 }

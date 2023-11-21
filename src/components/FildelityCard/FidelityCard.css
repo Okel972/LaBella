@@ -6,3 +6,9 @@
     object-position: center;
 }
 
+@media screen and (max-width: 975px) {
+
+    .image-fidelite {
+        object-fit: scale-down;
+    }
+}

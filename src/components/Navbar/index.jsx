@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { MobileMenu } from '../MobileMenu';
 
 export const Navbar = () => {
-  const routes = ['Home', 'Carte', 'Contact'];
+  const routes = ['Home', 'Carte', 'Contact', 'Admin'];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -52,11 +52,14 @@ export const Navbar = () => {
       )}
 
       <div className="topbar-last-section">
-        <div className="container-numero">
-          <img href="#" className="img-numero" src="img/phone1.svg" />
-          <span href="#" className="numero">
-            06 01 02 03 04
-          </span>
+        <div className="container-icon">
+          <div className="container-phone">
+            <img href="#" className="img-numero" src="img/phone1.svg" />
+            <span href="#" className="numero">
+              06 01 02 03 04
+            </span>
+          </div>
+          <Link to="connect" className="btnLogin-popup">Login</Link>
           <Link to="shopping-cart" className="cart-icon">
             <img src="img/shopping-cart-line.png" />
           </Link>

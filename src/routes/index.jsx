@@ -6,6 +6,7 @@ import { Contact } from '../features/Contact';
 import { Carte } from '../features/Carte';
 import { Connect } from '../features/Connect';
 import { Subscribe } from '../features/Subscribe';
+import { Admin } from '../features/Admin';
 
 export function AppRoutes() {
   const navigate = useNavigate();
@@ -27,6 +28,7 @@ export function AppRoutes() {
         { element: <Carte />, path: '/carte' },
         { element: <Connect />, path: '/connect' },
         { element: <Subscribe />, path: '/subscribe' },
+        { element: <Admin />, path: '/admin' },
         {
           element: <div>404</div>,
           path: '*',

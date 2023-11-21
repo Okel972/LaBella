@@ -60,7 +60,7 @@
     color: #E5E5E5;
 }
 
-.btnLogin-popup {
+/* .btnLogin-popup {
     width: 130px;
     height: 50px;
     background: transparent;
@@ -115,7 +115,7 @@
 .btnLogout a:hover {
     color: #162938;
     text-decoration: none;
-}
+} */
 
 .deuxieme-colonne {
     display: flex;

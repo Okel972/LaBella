@@ -12,7 +12,7 @@ export const Promo = () => {
           pizza à moitié prix !
         </span>
         <span className="promo-left-price">7.00€</span>
-        <a className="promo-left-order">commander</a>
+        <button className="promo-left-order">commander</button>
         <div className="promo-left-image"></div>
       </article>
 
@@ -22,7 +22,7 @@ export const Promo = () => {
         <span className="promo-right-comment1">3 pizzas Maxi achetées</span>
         <span className="promo-right-price">La 3ème à 3.00€*</span>
         <span className="promo-right-comment2">*la moins chère des trois</span>
-        <a className="promo-right-order">commander</a>
+        <button className="promo-right-order">commander</button>
         <div className="promo-right-image"></div>
       </article>
     </section>

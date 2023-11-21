@@ -111,3 +111,8 @@ form {
 .div-des-messages {
     min-height: 100px; /* Réglez la hauteur minimale en fonction de vos besoins */
 }
+
+@media screen and (max-width: 670px) {
+
+    
+}
